@@ -7,4 +7,9 @@ Sweetness Codes for C++ Programming.
 - sweety;
 - direct.
 
+What can I use ?
+=========
+- sockets: udp and multicast;
+- threads.
+
 Checkout to linux or windows, use, compile and enjoy!!
