@@ -1,4 +1,6 @@
 drops-cpp
 =========
 
-Cool classes for cpp programming.
+Sweetness Codes for C++ Programming.
+
+Checkout to linux or windows, use, compile and enjoy!!
