@@ -47,3 +47,27 @@ class Thread {
         }
 
 };
+
+class ____WindowsThread____: public Thread {
+
+    public:
+        ____WindowsThread____(){
+
+        }
+
+        ~____WindowsThread____(){
+
+        }
+};
+
+class ____LinuxThread____:public Thread {
+
+    public:
+        ____LinuxThread____(){
+
+        }
+
+        ~____LinuxThread____(){
+
+        }
+};

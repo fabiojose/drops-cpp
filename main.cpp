@@ -3,18 +3,12 @@
 
 #include "s.h"
 #include "socket.h"
+#include "thread.h"
 
 #define MCAST_ADDRESS "237.8.2.5"
 #define MCAST_PORT    8254
 
 using namespace std;
-
-typedef struct ThreadData {
-
-    InetAddress* address;
-    int number;
-
-}TDATA, *PTDATA;
 
 DWORD WINAPI Thread(void* data){
 
@@ -102,7 +96,7 @@ int main(int argc, char *argv[])
         cout<<"Exception: "<<e.what()<<endl;
     }
 
-    InetAddress* _parameter = (InetAddress*)HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, sizeof(InetAddress));
+    InetAddress* _parameter = (InetAddress*)ThreadUtil::newArgument(sizeof(InetAddress));
     _parameter->setHost("10.10.10.200");
 
     HANDLE _thread = CreateThread(NULL, 0, Thread, _parameter, 0, NULL);

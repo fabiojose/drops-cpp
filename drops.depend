@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1364391873 source:d:\study\c++\drops\main.cpp
+	<cstdlib>
+	<iostream>
+	<winsock2.h>
+	<ws2tcpip.h>
+	"s.h"
+	"socket.h"
+
+1364324010 d:\study\c++\drops\s.h
+	<exception>
+	<errno.h>
+	<string.h>
+	<stdio.h>
+
+1364220712 d:\study\c++\drops\socket.h
+	"net.h"
+	"usocket.h"
+	"tsocket.h"
+	"msocket.h"
+
+1364391831 d:\study\c++\drops\net.h
+	<iostream>
+	<sys/socket.h>
+	<winsock.h>
+
+1364391857 d:\study\c++\drops\usocket.h
+	<iostream>
+
+1363980122 d:\study\c++\drops\tsocket.h
+
+1364323232 d:\study\c++\drops\msocket.h
+
