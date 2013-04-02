@@ -10,6 +10,7 @@ Sweetness Codes for C++ Programming.
 What can I use ?
 =========
 - sockets: udp and multicast;
-- threads.
+- threads;
+- Date.
 
 Checkout to linux or windows, use, compile and enjoy!!
