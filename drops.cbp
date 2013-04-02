@@ -15,9 +15,21 @@
 		<Linker>
 			<Add option="C:/Dev-Cpp/lib/libwsock32.a" />
 		</Linker>
-		<Unit filename="main.cpp" />
+		<Unit filename="date-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="date.h" />
+		<Unit filename="map-example.cpp" />
+		<Unit filename="map.h" />
 		<Unit filename="msocket.h" />
+		<Unit filename="multicast-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="net.h" />
+		<Unit filename="process-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="properties.h" />
 		<Unit filename="s.h" />
 		<Unit filename="socket.h" />
 		<Unit filename="thread.h" />

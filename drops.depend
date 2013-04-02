@@ -31,3 +31,12 @@
 
 1364323232 d:\study\c++\drops\msocket.h
 
+1364836460 source:d:\study\c++\drops\date-example.cpp
+	<stdlib.h>
+	<iostream>
+	"date.h"
+
+1364836695 d:\study\c++\drops\date.h
+	<ctime>
+	<stdio.h>
+

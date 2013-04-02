@@ -1,73 +1,109 @@
 /**
  *
  * Threads.
- *
+ * fabiojose@gmail.com
  */
 
 #include <iostream>
 using namespace std;
 
-class ThreadUtil{
+#ifdef LINUX
+
+#else
+  #include <process.h>
+#endif // LINUX
+
+class Runnable{
 
     public:
-        ThreadUtil(){
+        Runnable(){
 
         }
 
-        ~ThreadUtil(){
+        ~Runnable(){
 
         }
 
-        static void* newArgument(int theSize){
-            #ifdef WINDOWS
-                return HeapAlloc(GetProcessHeap(), HEAP_ZERO_MEMORY, theSize);
-            #else
-                throw unsuppex;
-            #endif
-        }
+        virtual void run() = 0;
 };
 
-class Thread {
+class Thread:public Runnable {
+
+    private:
+        long unsigned int handle;
+        Runnable* target;
 
     public:
         Thread(){
+            target = NULL;
+        }
 
+        Thread(Runnable* target){
+            this->target = target;
         }
 
         ~Thread(){
 
         }
 
+        long unsigned int getHandle(){
+            return handle;
+        }
+
+        //the thread runner by OS
+        #ifdef LINUX
+
+        #else
+          static unsigned __stdcall runner(void* data){
+
+              Thread* _thread = (Thread*)data;
+              _thread->run();
+
+          }
+        #endif // LINUX
+
         void start(){
+
+            //the thread beginner by OS
+            #ifdef LINUX
+
+            #else
+              handle = _beginthreadex( NULL, 0, Thread::runner, this, 0, NULL);
+            #endif // LINUX
 
         }
 
         void run(){
 
+            cout<<"Running the target.";
+            if(NULL!= target){
+
+                target->run();
+
+            }
+
         }
 
 };
 
-class ____WindowsThread____: public Thread {
+class UtilThread{
 
     public:
-        ____WindowsThread____(){
+        UtilThread(){
 
         }
 
-        ~____WindowsThread____(){
-
-        }
-};
-
-class ____LinuxThread____:public Thread {
-
-    public:
-        ____LinuxThread____(){
+        ~UtilThread(){
 
         }
 
-        ~____LinuxThread____(){
+        static void wait(Thread* thread){
+
+            #ifdef LINUX
+
+            #else
+              WaitForSingleObject((HANDLE)thread->getHandle(), INFINITE);
+            #endif // LINUX
 
         }
 };

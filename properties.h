@@ -1,0 +1,3 @@
+#ifndef PROPERTIES_H_INCLUDED
+  #define PROPERTIES_H_INCLUDED
+#endif
