@@ -6,50 +6,31 @@ using namespace std;
 #include <stdlib.h>
 #include "map.h"
 
-template <class K, class V>
-class Entry {
-
-    private:
-        K key;
-        V value;
-
-    public:
-        Entry(K key, V value){
-            this->key   = key;
-            this->value = value;
-        }
-
-        K getkey(){
-            return key;
-        }
-
-        V getValue(){
-            return value;
-        }
-};
-
 int main(int argc, char* argv[]){
 
-    map<int, string> _mapping;
+    Map<int, string>* _hmap = new HashMap<int, string>();
 
-    _mapping.insert(pair<int, string>(500, "fabiojose"));
+    cout<<_hmap->put(500, "fabiojose")<<endl;
 
-    pair<map<int, string>::iterator, bool> _returned = _mapping.insert(pair<int, string>(500, "maria"));
-    if(!_returned.second){
-        cout<<"Exists: "<<_returned.first->second<<endl;
-    }
-    _mapping.insert(pair<int, string>(600, "jose"));
+    cout<<"Updating key 500: "<<_hmap->put(500, "maria")<<endl;
+    cout<<_hmap->put(600, "jose")<<endl;
 
-    map<int, string>::iterator _value = _mapping.find(500);
-    if(_value != _mapping.end()){
-        cout<<_value->second<<endl;
-    }
+    cout<<"size: "<<_hmap->size()<<endl;
+    cout<<"contains key 600: "<<_hmap->containsKey(600)<<endl;
+    cout<<"contains key 500: "<<_hmap->containsKey(500)<<endl;
 
-    Entry<int, string>* _entry = new Entry<int, string>(200, "Jose");
+    cout<<"getting key 500.: "<<_hmap->get(500)<<endl;
+    cout<<"removing key 500: "<<_hmap->remove(500)<<endl;
+    cout<<"getting key 500.: "<<_hmap->get(500)<<endl;
+    cout<<"contains key 500: "<<_hmap->containsKey(500)<<endl;
 
-    cout<<_entry->getkey()<<endl;
-    cout<<_entry->getValue()<<endl;
-    delete _entry;
+    cout<<"size: "<<_hmap->size()<<endl;
+    cout<<"cleaning the map."<<endl;
+    _hmap->clear();
+    cout<<"size: "<<_hmap->size()<<endl;
+
+    delete _hmap;
 
     return EXIT_SUCCESS;
 }
+

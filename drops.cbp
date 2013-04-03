@@ -19,7 +19,12 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="date.h" />
-		<Unit filename="map-example.cpp" />
+		<Unit filename="log4cpp.properties" />
+		<Unit filename="logging-example.cpp" />
+		<Unit filename="logging.h" />
+		<Unit filename="map-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="map.h" />
 		<Unit filename="msocket.h" />
 		<Unit filename="multicast-example.cpp">
@@ -29,12 +34,16 @@
 		<Unit filename="process-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="properties-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="properties.h" />
 		<Unit filename="s.h" />
 		<Unit filename="socket.h" />
 		<Unit filename="thread.h" />
 		<Unit filename="tsocket.h" />
 		<Unit filename="usocket.h" />
+		<Unit filename="util.h" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />

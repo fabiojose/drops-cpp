@@ -40,3 +40,13 @@
 	<ctime>
 	<stdio.h>
 
+1364911042 source:d:\study\c++\drops\map-example.cpp
+	<iostream>
+	<map>
+	<stdlib.h>
+	"map.h"
+
+1364910970 d:\study\c++\drops\map.h
+	<map>
+	<iostream>
+
