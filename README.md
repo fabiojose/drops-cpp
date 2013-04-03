@@ -7,10 +7,12 @@ Sweetness Codes for C++ Programming.
 - sweety;
 - direct.
 
-What can I use ?
+What can I use ? (...and growing up...)
 =========
 - sockets: udp and multicast;
 - threads;
-- Date.
+- Date;
+- HashMap;
+- Properties.
 
 Checkout to linux or windows, use, compile and enjoy!!
