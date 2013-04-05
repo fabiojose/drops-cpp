@@ -5,8 +5,7 @@
  * A "key = value" file style.
  */
 #ifndef PROPERTIES_H_INCLUDED
-  #define PROPERTIES_H_INCLUDED
-#endif
+#define PROPERTIES_H_INCLUDED
 
 #include <iostream>
 #include <fstream>
@@ -14,7 +13,7 @@
 using namespace std;
 
 #include "map.h"
-#include "util.h"
+#include "../util.h"
 
 class Properties: public HashMap<string, string> {
 
@@ -27,12 +26,15 @@ class Properties: public HashMap<string, string> {
                 string _key = _tokens.at(0);
                 _key = UtilString::trim(_key);
 
-                if(_tokens.size() == 2){
-                    _value = _tokens.at(1);
-                    _value = UtilString::trim(_value);
-                }
+                //it's not a comment
+                if('#'!= _key.at(0)){
+                    if(_tokens.size() == 2){
+                        _value = _tokens.at(1);
+                        _value = UtilString::trim(_value);
+                    }
 
-                put(_key, _value);
+                    put(_key, _value);
+                }
             }
         }
 
@@ -74,3 +76,5 @@ class Properties: public HashMap<string, string> {
         }
 
 } ;
+
+#endif //PROPERTIES_H_INCLUDED

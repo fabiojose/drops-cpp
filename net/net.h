@@ -4,6 +4,9 @@
  * fabiojose@gmail.com
  */
 
+#ifndef NET_H_INCLUDED
+#define NET_H_INCLUDED
+
 #include <iostream>
 using namespace std;
 
@@ -68,3 +71,5 @@ class Socket {
 
         }
 };
+
+#endif // NET_H_INCLUDED

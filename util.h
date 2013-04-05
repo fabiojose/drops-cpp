@@ -1,6 +1,5 @@
 #ifndef UTIL_H_INCLUDED
-  #define UTIL_H_INCLUDED
-#endif
+#define UTIL_H_INCLUDED
 
 #include <string>
 #include <sstream>
@@ -50,4 +49,14 @@ class UtilString {
         static string trim(string str){
             return trim(str, " ");
         }
+
+        static bool startsWith(string source, string prefix){
+            bool _result = false;
+
+            _result = (source.substr(0, prefix.size()) == prefix);
+
+            return _result;
+        }
 };
+
+#endif //UTIL_H_INCLUDED

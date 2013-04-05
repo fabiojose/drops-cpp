@@ -4,7 +4,7 @@
 using namespace std;
 
 #include <stdlib.h>
-#include "map.h"
+#include "util/map.h"
 
 int main(int argc, char* argv[]){
 

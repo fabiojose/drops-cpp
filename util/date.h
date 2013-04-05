@@ -5,8 +5,7 @@
  */
 
 #ifndef DATE_H_INCLUDED
-  #define DATE_H_INCLUDED
-#endif
+#define DATE_H_INCLUDED
 
 #include <ctime>
 using namespace std;
@@ -117,3 +116,5 @@ class UtilDate {
         static const long ONE_DAY = 86400L;
 
 };
+
+#endif //

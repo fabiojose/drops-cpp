@@ -18,32 +18,34 @@
 		<Unit filename="date-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="date.h" />
+		<Unit filename="lang/thread.h" />
 		<Unit filename="log4cpp.properties" />
-		<Unit filename="logging-example.cpp" />
-		<Unit filename="logging.h" />
+		<Unit filename="logging-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="map-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="map.h" />
-		<Unit filename="msocket.h" />
-		<Unit filename="multicast-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="net.h" />
+		<Unit filename="multicast-example.cpp" />
+		<Unit filename="net/msocket.h" />
+		<Unit filename="net/net.h" />
+		<Unit filename="net/socket.h" />
+		<Unit filename="net/tsocket.h" />
+		<Unit filename="net/usocket.h" />
 		<Unit filename="process-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="properties-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="properties.h" />
 		<Unit filename="s.h" />
-		<Unit filename="socket.h" />
-		<Unit filename="thread.h" />
-		<Unit filename="tsocket.h" />
-		<Unit filename="usocket.h" />
+		<Unit filename="strategy.h" />
 		<Unit filename="util.h" />
+		<Unit filename="util/date.h" />
+		<Unit filename="util/logging.h" />
+		<Unit filename="util/map.h" />
+		<Unit filename="util/properties.h" />
+		<Unit filename="visitor.h" />
 		<Extensions>
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />

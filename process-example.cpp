@@ -5,7 +5,7 @@ using namespace std;
 #include <stdlib.h>
 
 #include "s.h"
-#include "thread.h"
+#include "lang/thread.h"
 
 class CounterThread: public Runnable {
 

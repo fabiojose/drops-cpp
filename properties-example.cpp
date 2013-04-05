@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-#include "properties.h"
+#include "util/properties.h"
 
 int main(int argc, char* argv[]){
 

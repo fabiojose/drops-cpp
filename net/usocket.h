@@ -3,6 +3,8 @@
  * UPD Sockets
  * fabiojose@gmail.com
  */
+#ifndef USOCKET_H_INCLUDED
+#define USOCKET_H_INCLUDED
 
 #include <iostream>
 
@@ -179,3 +181,5 @@ class DatagramSocket: public Socket {
             closesocket(this->sockrecv);
         }
 };
+
+#endif // USOCKET_H_INCLUDED

@@ -4,6 +4,9 @@
  * fabiojose@gmail.com
  */
 
+#ifndef THREAD_H_INCLUDED
+#define THREAD_H_INCLUDED
+
 #include <iostream>
 using namespace std;
 
@@ -107,3 +110,5 @@ class UtilThread{
 
         }
 };
+
+#endif // THREAD_H_INCLUDED

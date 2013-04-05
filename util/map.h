@@ -3,9 +3,9 @@
  * fabiojose@gmail.com
  */
 #ifndef MAP_H_INCLUDED
-  #define MAP_H_INCLUDED
-#endif
+#define MAP_H_INCLUDED
 
+#include <set>
 #include <map>
 #include <iostream>
 using namespace std;
@@ -32,6 +32,8 @@ class Map {
         virtual int size() = 0;
         virtual void clear() = 0;
         virtual bool isEmpty() = 0;
+        virtual set<K> keySet() = 0;
+
 };
 
 template <class K, class V>
@@ -104,6 +106,19 @@ class HashMap: public Map<K, V> {
             return mapping.empty();
         }
 
+        set<K> keySet(){
+            set<K> _result;
+
+            typename map<K, V>::iterator _entry;
+            for(_entry = mapping.begin(); _entry != mapping.end(); ++_entry){
+
+                _result.insert(_entry->first);
+
+            }
+
+            return _result;
+        }
+
         string toString(){
             string _result("");
 
@@ -117,3 +132,5 @@ class HashMap: public Map<K, V> {
             return _result;
         }
 };
+
+#endif //MAP_H_INCLUDED

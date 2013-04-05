@@ -4,8 +4,8 @@
 using namespace std;
 
 #include "s.h"
-#include "socket.h"
-#include "thread.h"
+#include "net/socket.h"
+#include "lang/thread.h"
 
 #define MCAST_ADDRESS "237.8.2.5"
 #define MCAST_PORT    8254

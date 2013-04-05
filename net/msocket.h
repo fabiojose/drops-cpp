@@ -4,6 +4,9 @@
  * fabiojose@gmail.com
  */
 
+#ifndef MSOCKET_H_INCLUDED
+#define MSOCKET_H_INCLUDED
+
 class MulticastSocket: public DatagramSocket {
 
     private:
@@ -79,3 +82,5 @@ class MulticastSocket: public DatagramSocket {
              DatagramSocket::send(packet);
         }
 };
+
+#endif // MSOCKET_H_INCLUDED

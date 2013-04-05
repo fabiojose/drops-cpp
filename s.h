@@ -4,23 +4,28 @@
  * fabiojose@gmail.com
  */
 
+#ifndef S_H_INCLUDED
+#define S_H_INCLUDED
+
 #ifdef _WIN32
   #define WINDOWS "WINDOWS"
 #else
   #define LINUX "LINUX"
 #endif
 
-const int MAX_EXP_MSG_LENGTH = 256;
-
 #include <exception>
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
 
+#include "util.h"
+
 #ifdef WINDOWS
   #include <windows.h>
   #include <ws2tcpip.h>
 #endif // WINDOWS
+
+const int MAX_EXP_MSG_LENGTH = 256;
 
 using namespace std;
 
@@ -217,4 +222,4 @@ class UnsupportedOperationException: public Throwable {
         }
 } unsuppex;
 
-
+#endif // S_H_INCLUDED
