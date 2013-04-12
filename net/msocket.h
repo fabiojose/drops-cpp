@@ -1,5 +1,4 @@
 /**
- *
  * Multicast Sockets.
  * fabiojose@gmail.com
  */

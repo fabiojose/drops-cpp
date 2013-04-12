@@ -13,20 +13,20 @@
 			</Target>
 		</Build>
 		<Linker>
-			<Add option="C:/Dev-Cpp/lib/libwsock32.a" />
+			<Add option="libwsock32.a" />
 		</Linker>
 		<Unit filename="date-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="lang/thread.h" />
 		<Unit filename="log4cpp.properties" />
-		<Unit filename="logging-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="logging-example.cpp" />
 		<Unit filename="map-example.cpp">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="multicast-example.cpp" />
+		<Unit filename="multicast-example.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="net/msocket.h" />
 		<Unit filename="net/net.h" />
 		<Unit filename="net/socket.h" />
@@ -40,10 +40,37 @@
 		</Unit>
 		<Unit filename="s.h" />
 		<Unit filename="strategy.h" />
+		<Unit filename="text/data-format.cpp" />
+		<Unit filename="text/date-format.h" />
+		<Unit filename="text/format.cpp" />
+		<Unit filename="text/format.h" />
+		<Unit filename="text/level-format.cpp" />
+		<Unit filename="text/level-format.h" />
 		<Unit filename="util.h" />
+		<Unit filename="util/date.cpp" />
 		<Unit filename="util/date.h" />
-		<Unit filename="util/logging.h" />
+		<Unit filename="util/logging/appender-factory.cpp" />
+		<Unit filename="util/logging/appender-factory.h" />
+		<Unit filename="util/logging/appender.cpp" />
+		<Unit filename="util/logging/appender.h" />
+		<Unit filename="util/logging/console-appender.cpp" />
+		<Unit filename="util/logging/console-appender.h" />
+		<Unit filename="util/logging/file-appender.cpp" />
+		<Unit filename="util/logging/file-appender.h" />
+		<Unit filename="util/logging/formatter-factory.cpp" />
+		<Unit filename="util/logging/formatter-factory.h" />
+		<Unit filename="util/logging/formatter.cpp" />
+		<Unit filename="util/logging/formatter.h" />
+		<Unit filename="util/logging/level.h" />
+		<Unit filename="util/logging/log-record.h" />
+		<Unit filename="util/logging/logger-factory.cpp" />
+		<Unit filename="util/logging/logger-factory.h" />
+		<Unit filename="util/logging/logger.cpp" />
+		<Unit filename="util/logging/logger.h" />
+		<Unit filename="util/logging/simple-formatter.cpp" />
+		<Unit filename="util/logging/simple-formatter.h" />
 		<Unit filename="util/map.h" />
+		<Unit filename="util/properties.cpp" />
 		<Unit filename="util/properties.h" />
 		<Unit filename="visitor.h" />
 		<Extensions>

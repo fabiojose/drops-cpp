@@ -57,6 +57,18 @@ class UtilString {
 
             return _result;
         }
+
+        static char* toChar(string source){
+            char* _result = new char[source.size() + 1];
+
+            int _index = 0;
+            for(_index = 0; _index < source.size(); _index++){
+                *(_result + _index) = source.at(_index);
+            }
+            *(_result + _index) = '\0';
+
+            return _result;
+        }
 };
 
 #endif //UTIL_H_INCLUDED

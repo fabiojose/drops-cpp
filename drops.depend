@@ -50,3 +50,139 @@
 	<map>
 	<iostream>
 
+1365685745 source:d:\study\c++\drops\logging-example.cpp
+	<stdlib.h>
+	<iostream>
+	"util/date.h"
+	"text/date-format.h"
+	"util/map.h"
+	"util/properties.h"
+	"util/logger-helper.h"
+	"util/logger.h"
+
+1365523640 d:\study\c++\drops\util\date.h
+	<ctime>
+
+1365623293 d:\study\c++\drops\text\date-format.h
+	<ctime>
+	<iostream>
+	<string.h>
+	"format.h"
+	"../util/date.h"
+
+1365517560 d:\study\c++\drops\text\format.h
+
+1365603902 d:\study\c++\drops\util\map.h
+	<set>
+	<map>
+	<iostream>
+
+1365604157 d:\study\c++\drops\util\properties.h
+	<iostream>
+	<fstream>
+	<vector>
+	"map.h"
+	"../util.h"
+
+1365532380 d:\study\c++\drops\util.h
+	<string>
+	<sstream>
+	<vector>
+
+1365535003 d:\study\c++\drops\util\logging.h
+	<set>
+	<iostream>
+	"../util.h"
+	"properties.h"
+	"../strategy.h"
+	"appender.h"
+	"formatter.h"
+	"log-record.h"
+
+1365184838 d:\study\c++\drops\strategy.h
+	<set>
+	"util.h"
+	"util/map.h"
+	"util/properties.h"
+
+1365598229 d:\study\c++\drops\util\appender.h
+	"formatter.h"
+	"map.h"
+
+1365615606 d:\study\c++\drops\util\formatter.h
+	"log-record.h"
+	"map.h"
+
+1365685241 d:\study\c++\drops\util\log-record.h
+	"level.h"
+
+1365535237 d:\study\c++\drops\util\simple-logger.h
+
+1365535259 source:d:\study\c++\drops\util\simple-logger.cpp
+	"logging.h"
+	"simple-logger.h"
+
+1365685283 d:\study\c++\drops\util\logger.h
+	<string>
+	<set>
+	"appender.h"
+	"level.h"
+	"map.h"
+
+1365614937 d:\study\c++\drops\util\level.h
+
+1365614113 source:d:\study\c++\drops\util\logger-helper.cpp
+	"logger-helper.h"
+
+1365604082 d:\study\c++\drops\util\logger-helper.h
+	<set>
+	<string>
+	"properties.h"
+	"level.h"
+	"console-appender.h"
+	"file-appender.h"
+	"simple-formatter.h"
+	"logger.h"
+	"../util.h"
+	"../strategy.h"
+
+1365685323 source:d:\study\c++\drops\util\logger.cpp
+	"logger.h"
+
+1365598163 d:\study\c++\drops\util\console-appender.h
+	<iostream>
+	"appender.h"
+	"log-record.h"
+
+1365598274 d:\study\c++\drops\util\file-appender.h
+	"appender.h"
+
+1365615847 d:\study\c++\drops\util\simple-formatter.h
+	"formatter.h"
+	"../text/date-format.h"
+	"../text/level-format.h"
+	"date.h"
+
+1365623337 d:\study\c++\drops\text\level-format.h
+	<iostream>
+	"format.h"
+	"../util/level.h"
+
+1365615506 source:d:\study\c++\drops\text\level-format.cpp
+	"level-format.h"
+
+1365597914 source:d:\study\c++\drops\util\appender.cpp
+	"appender.h"
+
+1365614006 source:d:\study\c++\drops\util\console-appender.cpp
+	"console-appender.h"
+
+1365604238 source:d:\study\c++\drops\util\file-appender.cpp
+	"file-appender.h"
+
+1365612653 source:d:\study\c++\drops\util\formatter.cpp
+	"formatter.h"
+
+1365623573 source:d:\study\c++\drops\util\simple-formatter.cpp
+	"simple-formatter.h"
+

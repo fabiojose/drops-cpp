@@ -14,5 +14,6 @@ What can I use ? (...and growing up...)
 - Date;
 - HashMap;
 - Properties.
+- logging: console appender and file appender.
 
 Checkout to linux or windows, use, compile and enjoy!!
