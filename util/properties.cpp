@@ -3,17 +3,17 @@
 //private
 void Properties::process(string property){
 
-    vector<string> _tokens = UtilString::split(property, '=');
+    vector<string> _tokens = StringUtil::split(property, '=');
     if(_tokens.size() > 0){
         string _value("");
         string _key = _tokens.at(0);
-        _key = UtilString::trim(_key);
+        _key = StringUtil::trim(_key);
 
         //it's not a comment
         if('#'!= _key.at(0)){
             if(_tokens.size() == 2){
                 _value = _tokens.at(1);
-                _value = UtilString::trim(_value);
+                _value = StringUtil::trim(_value);
             }
 
             put(_key, _value);

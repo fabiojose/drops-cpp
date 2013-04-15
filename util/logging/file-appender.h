@@ -6,7 +6,7 @@ using namespace std;
 
 #include <sys/stat.h>
 
-#include "../../util.h"
+#include "../../lang/string-util.h"
 #include "appender.h"
 
 /**

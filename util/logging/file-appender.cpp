@@ -11,7 +11,7 @@ string FileAppender::getDirectory(){
 
 fstream& FileAppender::getFile(){
     if(!file.is_open()){
-        char* _absolute = UtilString::toChar(getDirectory() + getFileName());
+        char* _absolute = StringUtil::toChar(getDirectory() + getFileName());
         file.open(_absolute,  ios::out | ios::app);
         file.seekp(ios::end);
 

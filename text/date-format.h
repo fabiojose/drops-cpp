@@ -9,7 +9,7 @@ using namespace std;
 
 #include "format.h"
 #include "../util/date.h"
-#include "../util.h"
+#include "../lang/string-util.h"
 
 #define ____DATE_DEFAULT_PATTERN "%d/%m/%Y %H:%M:%S";
 

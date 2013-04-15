@@ -15,30 +15,59 @@
 		<Linker>
 			<Add option="libwsock32.a" />
 		</Linker>
-		<Unit filename="date-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="drops.h" />
+		<Unit filename="example/date-example.cpp" />
+		<Unit filename="example/date-example.h" />
+		<Unit filename="example/example.cpp" />
+		<Unit filename="example/example.h" />
+		<Unit filename="example/logging-example.cpp" />
+		<Unit filename="example/logging-example.h" />
+		<Unit filename="example/map-example.cpp" />
+		<Unit filename="example/map-example.h" />
+		<Unit filename="example/multicast-example.cpp" />
+		<Unit filename="example/multicast-example.h" />
+		<Unit filename="example/properties-example.cpp" />
+		<Unit filename="example/properties-example.h" />
+		<Unit filename="example/tcpsock-example.cpp" />
+		<Unit filename="example/tcpsock-example.h" />
+		<Unit filename="example/thread-example.cpp" />
+		<Unit filename="example/thread-example.h" />
+		<Unit filename="io/input-stream.cpp" />
+		<Unit filename="io/input-stream.h" />
+		<Unit filename="io/output-stream.cpp" />
+		<Unit filename="io/output-stream.h" />
+		<Unit filename="lang/exception/exception-util.cpp" />
+		<Unit filename="lang/exception/exception-util.h" />
+		<Unit filename="lang/exception/exceptions.cpp" />
+		<Unit filename="lang/exception/exceptions.h" />
+		<Unit filename="lang/exception/throwable.cpp" />
+		<Unit filename="lang/exception/throwable.h" />
+		<Unit filename="lang/runnable.cpp" />
+		<Unit filename="lang/runnable.h" />
+		<Unit filename="lang/string-util.cpp" />
+		<Unit filename="lang/string-util.h" />
+		<Unit filename="lang/thread-util.cpp" />
+		<Unit filename="lang/thread-util.h" />
+		<Unit filename="lang/thread.cpp" />
 		<Unit filename="lang/thread.h" />
 		<Unit filename="log4cpp.properties" />
-		<Unit filename="logging-example.cpp" />
-		<Unit filename="map-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="multicast-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="main.cpp" />
+		<Unit filename="net/dpacket.cpp" />
+		<Unit filename="net/dpacket.h" />
+		<Unit filename="net/dsocket.cpp" />
+		<Unit filename="net/dsocket.h" />
+		<Unit filename="net/iaddress.cpp" />
+		<Unit filename="net/iaddress.h" />
+		<Unit filename="net/msocket.cpp" />
 		<Unit filename="net/msocket.h" />
-		<Unit filename="net/net.h" />
+		<Unit filename="net/socket-istream.cpp" />
+		<Unit filename="net/socket-istream.h" />
+		<Unit filename="net/socket-ostream.cpp" />
+		<Unit filename="net/socket-ostream.h" />
+		<Unit filename="net/socket.cpp" />
 		<Unit filename="net/socket.h" />
+		<Unit filename="net/tsocket.cpp" />
 		<Unit filename="net/tsocket.h" />
-		<Unit filename="net/usocket.h" />
-		<Unit filename="process-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="properties-example.cpp">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="s.h" />
 		<Unit filename="strategy.h" />
 		<Unit filename="text/data-format.cpp" />
 		<Unit filename="text/date-format.h" />
@@ -46,7 +75,6 @@
 		<Unit filename="text/format.h" />
 		<Unit filename="text/level-format.cpp" />
 		<Unit filename="text/level-format.h" />
-		<Unit filename="util.h" />
 		<Unit filename="util/date.cpp" />
 		<Unit filename="util/date.h" />
 		<Unit filename="util/logging/appender-factory.cpp" />

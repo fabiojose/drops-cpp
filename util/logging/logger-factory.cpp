@@ -30,7 +30,7 @@ LoggerFactory::~LoggerFactory(){
 string LoggerFactory::nameOf(string key, string prefix){
     string _result("");
 
-    if(UtilString::startsWith(key, prefix)){
+    if(StringUtil::startsWith(key, prefix)){
         _result = key.substr(prefix.size(), key.size());
 
         size_t _index = _result.find_first_of(".");
@@ -133,12 +133,12 @@ void LoggerFactory::setup(){
                 if("SimpleFormatter" == _fname){
 
                     _formatter = new SimpleFormatter();
-                    _formatter->setPattern(UtilString::toChar( _pformatters->get(_kname + ".pattern") ));
+                    _formatter->setPattern(StringUtil::toChar( _pformatters->get(_kname + ".pattern") ));
 
                     //store the formatter properties
                     set<string> _keys = _pformatters->keySet();
                     for(set<string>::iterator _key = _keys.begin(); _key != _keys.end(); ++_key){
-                        if(UtilString::startsWith(*_key, _kname)){
+                        if(StringUtil::startsWith(*_key, _kname)){
                             _formatter->put(*_key, _kname);
                         }
                     }
@@ -178,7 +178,7 @@ void LoggerFactory::setup(){
                 //store the appender properties
                 set<string> _keys = _pappenders->keySet();
                 for(set<string>::iterator _key = _keys.begin(); _key != _keys.end(); ++_key){
-                    if(UtilString::startsWith(*_key, _kname)){
+                    if(StringUtil::startsWith(*_key, _kname)){
                         string __key = *_key;
                         if(__key.size() != _kname.size()){
                             __key = __key.substr(_kname.size() + 1);
@@ -224,16 +224,16 @@ void LoggerFactory::setup(){
             //store the logger properties
             set<string> _keys = _ploggers->keySet();
             for(set<string>::iterator _key = _keys.begin(); _key != _keys.end(); ++_key){
-                if(UtilString::startsWith(*_key, LOG4CPP_LOGGER + *_logger)){
+                if(StringUtil::startsWith(*_key, LOG4CPP_LOGGER + *_logger)){
                     _theLogger->put(*_key, _ploggers->get(*_key));
                 }
             }
 
             string _kapd(LOG4CPP_LOGGER + *_logger + ".appender");
             if(_ploggers->containsKey(_kapd)){
-                vector<string> _lappenders = UtilString::split(_ploggers->get(_kapd), ',');
+                vector<string> _lappenders = StringUtil::split(_ploggers->get(_kapd), ',');
                 for(vector<string>::iterator _appender = _lappenders.begin(); _appender != _lappenders.end(); ++_appender){
-                    string _sappender = UtilString::trim(*_appender);
+                    string _sappender = StringUtil::trim(*_appender);
 
                     if(____LOG4CPP_APPENDERS.containsKey(_sappender)){
                         _theLogger->add(____LOG4CPP_APPENDERS.get(_sappender));
@@ -246,7 +246,7 @@ void LoggerFactory::setup(){
             }
 
             //the logger name
-            _theLogger->setName(UtilString::toChar(*_logger));
+            _theLogger->setName(StringUtil::toChar(*_logger));
 
             //store the logger in the map
             ____LOG4CPP_LOGGERS.put(*_logger, _theLogger);

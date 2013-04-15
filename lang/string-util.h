@@ -6,16 +6,11 @@
 #include <vector>
 using namespace std;
 
-class UtilString {
+class StringUtil {
 
     public:
-        UtilString(){
-
-        }
-
-        ~UtilString(){
-
-        }
+        StringUtil();
+        virtual ~StringUtil();
 
         static vector<string> split(string str, char delimiter){
             vector<string> _result;

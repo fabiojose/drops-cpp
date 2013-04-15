@@ -1,12 +1,14 @@
+#include "logging-example.h"
 
-#include <stdlib.h>
-#include <iostream>
-using namespace std;
+LoggingExample::LoggingExample(){
 
-#include "util/logging/logger-factory.h"
-#include "util/logging/logger.h"
+}
 
-int main(int argc, char* argv[]){
+LoggingExample::~LoggingExample(){
+
+}
+
+int LoggingExample::execute(int argc, char* argv[]){
 
     LoggerFactory _factory;
     _factory.setup();

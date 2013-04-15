@@ -7,7 +7,7 @@
 using namespace std;
 
 #include "map.h"
-#include "../util.h"
+#include "../lang/string-util.h"
 
 /**
  * Properties.

@@ -1,18 +1,17 @@
-/**
- * The Strategy Design Pattern.
- * fabiojose@gmail.com
- */
-
 #ifndef STRATEGY_H_INCLUDED
 #define STRATEGY_H_INCLUDED
 
 #include <set>
 using namespace std;
 
-#include "util.h"
+#include "lang/string-util.h"
 #include "util/map.h"
 #include "util/properties.h"
 
+/**
+ * The Strategy Design Pattern.
+ * fabiojose@gmail.com
+ */
 template<class T, class R>
 class Strategy {
 
@@ -43,15 +42,15 @@ class PropertiesStrategy: public Strategy<string, Map<string, string>*> {
         }
 
         /**
-        * Search keys based on baseKey and populate a Map.
-        */
+         * Search keys based on baseKey and populate a Map.
+         */
         Map<string, string>* execute(string baseKey){
             Map<string, string>* _result = new HashMap<string, string>();
 
             set<string> _keys = properties->keySet();
             for(set<string>::iterator _key = _keys.begin(); _key != _keys.end(); ++_key){
 
-                if(UtilString::startsWith((string)*_key, baseKey)){
+                if(StringUtil::startsWith((string)*_key, baseKey)){
                     _result->put((string)*_key, properties->getProperty((string)*_key));
                 }
 

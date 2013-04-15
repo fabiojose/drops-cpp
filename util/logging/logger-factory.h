@@ -16,7 +16,7 @@ using namespace std;
 #include "formatter-factory.h"
 #include "appender-factory.h"
 
-#include "../../util.h"
+#include "../../lang/string-util.h"
 #include "../../strategy.h"
 
 /**

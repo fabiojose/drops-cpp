@@ -1,11 +1,4 @@
-
-#include <iostream>
-using namespace std;
-
-#include <stdlib.h>
-
-#include "s.h"
-#include "lang/thread.h"
+#include "thread-example.h"
 
 class CounterThread: public Runnable {
 
@@ -29,9 +22,17 @@ class CounterThread: public Runnable {
 
 };
 
-int main(int argc, char* argv[]){
+ThreadExample::ThreadExample(){
 
-    cout<<"OS: "<<S::runningOn()<<endl;
+}
+
+ThreadExample::~ThreadExample(){
+
+}
+
+int ThreadExample::execute(int argc, char* argv[]){
+
+    cout<<"OS: "<<Drops::runningOn()<<endl;
 
     //using a Runnable target.
     Runnable* _tcounter = new CounterThread();
@@ -43,7 +44,7 @@ int main(int argc, char* argv[]){
     _thread->start();
 
     //waiting util thread´s run ends
-    UtilThread::wait(_thread);
+    ThreadUtil::wait(_thread);
 
     delete _tcounter;
     delete _thread;

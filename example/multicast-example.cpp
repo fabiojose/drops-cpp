@@ -1,19 +1,11 @@
-#include <cstdlib>
-
-#include <iostream>
-using namespace std;
-
-#include "s.h"
-#include "net/socket.h"
-#include "lang/thread.h"
+#include "multicast-example.h"
 
 #define MCAST_ADDRESS "237.8.2.5"
 #define MCAST_PORT    8254
 
 /**
- * The receiver thread.
+ *The receiver thread.
  */
-
 class Receiver: public Thread{
 
     public:
@@ -49,11 +41,18 @@ class Receiver: public Thread{
         }
 };
 
-int main(int argc, char *argv[])
-{
+MulticastExample::MulticastExample(){
+
+}
+
+MulticastExample::~MulticastExample(){
+
+}
+
+int MulticastExample::execute(int argc, char *argv[]){
     int _result = EXIT_SUCCESS;
 
-    cout<<"OS: "<<S::runningOn()<<endl;
+    cout<<"OS: "<<Drops::runningOn()<<endl;
 
     //the receiver thread
     Receiver* _receiver = new Receiver();

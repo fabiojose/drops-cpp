@@ -1,34 +1,21 @@
-/**
- * Threads.
- * fabiojose@gmail.com
- */
-
 #ifndef THREAD_H_INCLUDED
 #define THREAD_H_INCLUDED
 
-#include <iostream>
-using namespace std;
+#include <stddef.h>
 
-#ifdef LINUX
-
-#else
+//include by OS
+#ifdef _WIN32
   #include <process.h>
-#endif // LINUX
+#else
 
-class Runnable{
+#endif // _WIN32
 
-    public:
-        Runnable(){
+#include "runnable.h"
 
-        }
-
-        ~Runnable(){
-
-        }
-
-        virtual void run() = 0;
-};
-
+/**
+ * Thread.
+ * fabiojose@gmail.com
+ */
 class Thread:public Runnable {
 
     private:
@@ -36,78 +23,26 @@ class Thread:public Runnable {
         Runnable* target;
 
     public:
-        Thread(){
-            target = NULL;
-        }
+        Thread();
+        Thread(Runnable* target);
+        virtual ~Thread();
 
-        Thread(Runnable* target){
-            this->target = target;
-        }
-
-        ~Thread(){
-
-        }
-
-        long unsigned int getHandle(){
-            return handle;
-        }
+        long unsigned int getHandle();
 
         //the thread runner by OS
-        #ifdef LINUX
-
-        #else
+        #ifdef _WIN32
           static unsigned __stdcall runner(void* data){
 
               Thread* _thread = (Thread*)data;
               _thread->run();
 
           }
-        #endif // LINUX
+        #else
 
-        void start(){
+        #endif // _WIN32
 
-            //the thread beginner by OS
-            #ifdef LINUX
-
-            #else
-              handle = _beginthreadex( NULL, 0, Thread::runner, this, 0, NULL);
-            #endif // LINUX
-
-        }
-
-        void run(){
-
-            cout<<"Running the target.";
-            if(NULL!= target){
-
-                target->run();
-
-            }
-
-        }
-
-};
-
-class UtilThread{
-
-    public:
-        UtilThread(){
-
-        }
-
-        ~UtilThread(){
-
-        }
-
-        static void wait(Thread* thread){
-
-            #ifdef LINUX
-
-            #else
-              WaitForSingleObject((HANDLE)thread->getHandle(), INFINITE);
-            #endif // LINUX
-
-        }
+        void start();
+        void run();
 };
 
 #endif // THREAD_H_INCLUDED

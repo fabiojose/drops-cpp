@@ -1,11 +1,14 @@
+#include "properties-example.h"
 
-#include <stdlib.h>
-#include <iostream>
-using namespace std;
+PropertiesExample::PropertiesExample(){
 
-#include "util/properties.h"
+}
 
-int main(int argc, char* argv[]){
+PropertiesExample::~PropertiesExample(){
+
+}
+
+int PropertiesExample::execute(int argc, char* argv[]){
 
     fstream _input("log4cpp.properties");
     Properties* _properties = new Properties();

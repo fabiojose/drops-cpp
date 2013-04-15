@@ -1,11 +1,14 @@
+#include "date-example.h"
 
-#include <stdlib.h>
-#include <iostream>
-using namespace std;
+DateExample::DateExample(){
 
-#include "util/date.h"
+}
 
-int main(int argc, char* argv[]){
+DateExample::~DateExample(){
+
+}
+
+int DateExample::execute(int argc, char* argv[]){
 
     Date* _now = new Date();
     cout<<_now->toString()<<endl;

@@ -1,12 +1,14 @@
+#include "map-example.h"
 
-#include <iostream>
-#include <map>
-using namespace std;
+MapExample::MapExample(){
 
-#include <stdlib.h>
-#include "util/map.h"
+}
 
-int main(int argc, char* argv[]){
+MapExample::~MapExample(){
+
+}
+
+int MapExample::execute(int argc, char* argv[]){
 
     Map<int, string>* _hmap = new HashMap<int, string>();
 
