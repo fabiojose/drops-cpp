@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fabiojose/drops-cpp.png?branch=master)](https://travis-ci.org/fabiojose/drops-cpp)
+
 drops-cpp
 =========
 
