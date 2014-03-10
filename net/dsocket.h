@@ -8,7 +8,7 @@
   #include <sys/types.h>
   #include <sys/socket.h>
   #include <netinet/in.h>
-  #define INVALID_SOCKET (SOCKET)(~0)
+  #define INVALID_SOCKET (unsigned int)(~0)
   #define SOCKET_ERROR	(-1)
 #endif
 
