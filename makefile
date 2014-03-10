@@ -1,4 +1,4 @@
-CXXFLAGS=-c -Wall -Wwrite-strings
+CXXFLAGS=-c -Wall -Wwrite-strings -Wwrite-strings
 all:
 	#  example
 	$(CXX) $(CXXFLAGS) example/example.cpp
