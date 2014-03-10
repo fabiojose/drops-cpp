@@ -13,10 +13,10 @@
 class SocketInputStream: public InputStream {
 
     private:
-        SOCKET sock;
+        unsigned int sock;
 
     public:
-        SocketInputStream(SOCKET);
+        SocketInputStream(unsigned int);
         virtual ~SocketInputStream();
 
         int read(char*, int);

@@ -13,10 +13,10 @@
 class SocketOutputStream: public OutputStream {
 
     private:
-        SOCKET sock;
+        unsigned int sock;
 
     public:
-        SocketOutputStream(SOCKET);
+        SocketOutputStream(unsigned int);
         virtual ~SocketOutputStream();
 
         void write(char*, int);

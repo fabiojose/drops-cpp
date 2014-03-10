@@ -25,7 +25,7 @@ class Socket {
         char* host;
         int port;
 
-        SOCKET socksend;
+        unsigned int socksend;
         sockaddr_in target;
         OutputStream* output;
         InputStream* input;

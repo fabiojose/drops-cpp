@@ -20,8 +20,8 @@
 class DatagramSocket {
 
     protected:
-        SOCKET socksend;
-        SOCKET sockrecv;
+        unsigned int socksend;
+        unsigned int sockrecv;
 
         struct sockaddr_in localhost;
         struct ip_mreq from;
