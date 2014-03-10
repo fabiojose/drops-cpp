@@ -1,5 +1,5 @@
 all:
-	g++ example/example.cpp -o example.o
+	g++ -c -Wall example/example.cpp
 	g++ example/date-example.cpp -o date-example.o
 	
 	g++ example/logging-example.cpp -o logging-example.o
