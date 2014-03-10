@@ -9,6 +9,7 @@
   #include <sys/socket.h>
   #include <netinet/in.h>
   #include <stddef.h>
+  #include <unistd.h>
 #endif
 
 class InetAddress {
