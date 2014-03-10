@@ -26,7 +26,7 @@ class Socket {
         int port;
 
         SOCKET socksend;
-        SOCKADDR_IN target;
+        sockaddr_in target;
         OutputStream* output;
         InputStream* input;
 

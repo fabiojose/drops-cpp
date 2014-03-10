@@ -191,3 +191,356 @@
 
 1365787584 d:\study\c++\drops\lang\runnable.h
 
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\date-example.cpp
+	"date-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\date-example.h
+	<stdlib.h>
+	<iostream>
+	"../util/date.h"
+	"example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\date.h
+	<string>
+	<ctime>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\example.h
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\example.cpp
+	"example.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\logging-example.cpp
+	"logging-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\logging-example.h
+	<stdlib.h>
+	<iostream>
+	"../util/logging/logger-factory.h"
+	"../util/logging/logger.h"
+	"example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\logger-factory.h
+	<set>
+	<string>
+	"../properties.h"
+	"level.h"
+	"console-appender.h"
+	"file-appender.h"
+	"simple-formatter.h"
+	"logger.h"
+	"formatter-factory.h"
+	"appender-factory.h"
+	"../../lang/string-util.h"
+	"../../strategy.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\properties.h
+	<iostream>
+	<fstream>
+	<vector>
+	"map.h"
+	"../lang/string-util.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\map.h
+	<set>
+	<map>
+	<iostream>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\string-util.h
+	<string>
+	<sstream>
+	<vector>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\level.h
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\console-appender.h
+	<iostream>
+	"appender.h"
+	"log-record.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\appender.h
+	"formatter.h"
+	"../map.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\formatter.h
+	"log-record.h"
+	"../map.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\log-record.h
+	"level.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\file-appender.h
+	<fstream>
+	<sys/stat.h>
+	"../../lang/string-util.h"
+	"appender.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\simple-formatter.h
+	"formatter.h"
+	"../../text/date-format.h"
+	"../../text/level-format.h"
+	"../date.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\text\date-format.h
+	<ctime>
+	<iostream>
+	<string.h>
+	"format.h"
+	"../util/date.h"
+	"../lang/string-util.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\text\format.h
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\text\level-format.h
+	<iostream>
+	<string.h>
+	"format.h"
+	"../util/logging/level.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\logger.h
+	<string>
+	<set>
+	"appender.h"
+	"level.h"
+	"../map.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\formatter-factory.h
+	"formatter.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\util\logging\appender-factory.h
+	"appender.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\strategy.h
+	<set>
+	"lang/string-util.h"
+	"util/map.h"
+	"util/properties.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\map-example.cpp
+	"map-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\map-example.h
+	<iostream>
+	<map>
+	<stdlib.h>
+	"../util/map.h"
+	"example.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\multicast-example.cpp
+	"multicast-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\multicast-example.h
+	<iostream>
+	<stdlib.h>
+	"../drops.h"
+	"../net/msocket.h"
+	"../lang/thread.h"
+	"example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\drops.h
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\net\msocket.h
+	"dsocket.h"
+
+1394455667 c:\documents and settings\fabiojm\drops-cpp\net\dsocket.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	"dpacket.h"
+	"../lang/exception/exceptions.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\net\dpacket.h
+	"iaddress.h"
+
+1394455482 c:\documents and settings\fabiojm\drops-cpp\net\iaddress.h
+	<winsock.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\exception\exceptions.h
+	"throwable.h"
+	"exception-util.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\exception\throwable.h
+	<exception>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\exception\exception-util.h
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<errno.h>
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\thread.h
+	<stddef.h>
+	<process.h>
+	"runnable.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\runnable.h
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\properties-example.cpp
+	"properties-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\properties-example.h
+	<stdlib.h>
+	<iostream>
+	"../util/properties.h"
+	"example.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\tcpsock-example.cpp
+	"tcpsock-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\tcpsock-example.h
+	<iostream>
+	<string.h>
+	"../net/socket.h"
+	"example.h"
+
+1394455734 c:\documents and settings\fabiojm\drops-cpp\net\socket.h
+	<iostream>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+	"../lang/exception/exceptions.h"
+	"socket-ostream.h"
+	"socket-istream.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+	"../io/output-stream.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\io\output-stream.h
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\net\socket-istream.h
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+	"../io/input-stream.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\io\input-stream.h
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\example\thread-example.cpp
+	"thread-example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\example\thread-example.h
+	<iostream>
+	<stdlib.h>
+	"../drops.h"
+	"../lang/thread.h"
+	"../lang/thread-util.h"
+	"example.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\thread-util.h
+	"thread.h"
+	<process.h>
+	<windows.h>
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\io\input-stream.cpp
+	"input-stream.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\io\output-stream.cpp
+	"output-stream.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\exception\exception-util.cpp
+	"exception-util.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\exception\exceptions.cpp
+	"exceptions.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\exception\throwable.cpp
+	"throwable.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\runnable.cpp
+	"runnable.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\string-util.cpp
+	"string-util.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\thread-util.cpp
+	"thread-util.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\lang\thread.cpp
+	"thread.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\main.cpp
+	<iostream>
+	<stdlib.h>
+	"example/date-example.h"
+	"example/logging-example.h"
+	"example/map-example.h"
+	"example/properties-example.h"
+	"example/thread-example.h"
+	"example/multicast-example.h"
+	"example/tcpsock-example.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\dpacket.cpp
+	"dpacket.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\dsocket.cpp
+	"dsocket.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\iaddress.cpp
+	"iaddress.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\msocket.cpp
+	"msocket.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-istream.cpp
+	"socket-istream.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.cpp
+	"socket-ostream.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket.cpp
+	"socket.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\tsocket.cpp
+	"tsocket.h"
+
+1394219258 c:\documents and settings\fabiojm\drops-cpp\net\tsocket.h
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\text\data-format.cpp
+	"date-format.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\text\format.cpp
+	"format.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\text\level-format.cpp
+	"level-format.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\date.cpp
+	"date.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\appender-factory.cpp
+	"appender-factory.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\appender.cpp
+	"appender.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\console-appender.cpp
+	"console-appender.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\file-appender.cpp
+	"file-appender.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\formatter-factory.cpp
+	"formatter-factory.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\formatter.cpp
+	"formatter.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\logger-factory.cpp
+	"logger-factory.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\logger.cpp
+	"logger.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\logging\simple-formatter.cpp
+	"simple-formatter.h"
+
+1394219258 source:c:\documents and settings\fabiojm\drops-cpp\util\properties.cpp
+	"properties.h"
+
