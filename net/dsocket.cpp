@@ -94,6 +94,11 @@ void DatagramSocket::send(DatagramPacket* packet){
 }
 
 void DatagramSocket::close(){
-    closesocket(this->socksend);
-    closesocket(this->sockrecv);
+    //piece of code by OS
+    #ifdef _WIN32
+      closesocket(this->socksend);
+      closesocket(this->sockrecv);
+    #else
+      close(this->socksend);
+    #endif
 }
