@@ -12,7 +12,7 @@ TcpsockExample::~TcpsockExample(){
 }
 
 int TcpsockExample::execute(int argc, char* argv[]){
-    int _result = EXIT_SUCCESS;
+    int _result = 0;
 
     try{
         Socket* _socket       = new Socket(HOST, PORT);
@@ -31,7 +31,7 @@ int TcpsockExample::execute(int argc, char* argv[]){
     }catch(exception& e){
         cout<<"Exception: "<<e.what()<<endl;
 
-        _result = EXIT_FAILURE;
+        _result = 1;
     }
 
     return _result;
