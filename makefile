@@ -1,9 +1,10 @@
+CXXFLAGS=-c -Wall
 all:
-	g++ -c -Wall example/example.cpp
-	g++ example/date-example.cpp -o date-example.o
+	$(CXX) $(CXXFLAGS) example/example.cpp
+	$(CXX) $(CXXFLAGS) example/date-example.cpp
+	$(CXX) $(CXXFLAGS) example/logging-example.cpp
+	$(CXX) $(CXXFLAGS) example/map-example.cpp
 	
-	g++ example/logging-example.cpp -o logging-example.o
-	g++ example/map-example.cpp -o map-example.o
 	g++ main.cpp lang/exception/throwable.cpp -o hello
 
 test:
