@@ -1,5 +1,5 @@
 all:
-	g++ main.cpp -o hello
+	g++ main.cpp lang/exception/throwable.cpp -o hello
 
 test:
 	
