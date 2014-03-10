@@ -86,7 +86,7 @@ void DatagramSocket::send(DatagramPacket* packet){
         #ifdef _WIN32
           _target.sin_addr.s_addr = inet_addr(packet->getTarget()->getHost());
         #else
-          _target.sin_addr.s_addr = htonl(packet->getTarget()->getHost());
+          inet_pton(AF_INET, packet->getTarget()->getHost(), &_target.sin_addr);
         #endif
         _target.sin_port = htons(packet->getPort());
 
