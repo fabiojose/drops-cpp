@@ -90,8 +90,8 @@ void DatagramSocket::send(DatagramPacket* packet){
         #endif
         _target.sin_port = htons(packet->getPort());
 
-        //enviar bytes
-        if(sendto(this->socksend, packet->getData(), packet->getLength(), MSG_DONTROUTE, (LPSOCKADDR) &_target, sizeof(_target)) != SOCKET_ERROR){
+        //enviar bytes LPSOCKADDR
+        if(sendto(this->socksend, packet->getData(), packet->getLength(), MSG_DONTROUTE, (struct sockaddr *)&_target, sizeof(_target)) != SOCKET_ERROR){
 
         } else {
             throw packsndex;
