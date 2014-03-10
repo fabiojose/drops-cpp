@@ -1,4 +1,4 @@
-CXXFLAGS=-c
+CXXFLAGS=-c -Wno-write-strings
 all:
 	#  example
 	$(CXX) $(CXXFLAGS) example/example.cpp
