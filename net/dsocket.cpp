@@ -76,9 +76,14 @@ void DatagramSocket::send(DatagramPacket* packet){
     if(packet->getTarget() != NULL && packet->getPort() > 0){
 
         struct sockaddr_in _target;
-        _target.sin_family      = AF_INET;
-        _target.sin_addr.s_addr = inet_addr(packet->getTarget()->getHost());
-        _target.sin_port        = htons(packet->getPort());
+        _target.sin_family = AF_INET;
+        //piece of code by OS
+        #ifdef _WIN32
+          _target.sin_addr.s_addr = inet_addr(packet->getTarget()->getHost());
+        #else
+          _target.sin_addr.s_addr = htonl(packet->getTarget()->getHost());
+        #endif
+        _target.sin_port = htons(packet->getPort());
 
         //enviar bytes
         if(sendto(this->socksend, packet->getData(), packet->getLength(), MSG_DONTROUTE, (LPSOCKADDR) &_target, sizeof(_target)) != SOCKET_ERROR){
