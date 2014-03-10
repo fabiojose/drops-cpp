@@ -12,7 +12,9 @@ DatagramPacket::DatagramPacket(char* buffer, int length){
     this->port    = 0;
 }
 
-DatagramPacket::DatagramPacket(char* buffer, int length, InetAddress* target, int port): DatagramPacket(buffer, length) {
+DatagramPacket::DatagramPacket(char* buffer, int length, InetAddress* target, int port){
+    this->buffer = buffer;
+    this->length = length;
     this->target = target;
     this->port   = port;
 }
