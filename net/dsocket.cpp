@@ -53,7 +53,12 @@ void DatagramSocket::receive(DatagramPacket* packet){
      if(packet->getTarget() != NULL && packet->getPort() > 0){
 
          char* _buffer = new char[DEFAULT_BUFFER_SIZE];
-         int _sizeof   = sizeof(struct sockaddr);
+         //piece of code by OS
+         #ifdef _WIN32
+           int _sizeof = sizeof(struct sockaddr);
+         #else
+           unsigned int _sizeof = sizeof(struct sockaddr);
+         #endif
 
          //recebendo datagram do remetente
          if(recvfrom(this->sockrecv, _buffer, DEFAULT_BUFFER_SIZE, 0, (struct sockaddr*)&this->from, &_sizeof) != SOCKET_ERROR){
