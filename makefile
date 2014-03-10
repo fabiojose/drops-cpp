@@ -1,4 +1,4 @@
-CXXFLAGS=-c -Wall -Wwrite-strings -Wreturn-type -Wsign-compare
+CXXFLAGS=-c
 all:
 	#  example
 	$(CXX) $(CXXFLAGS) example/example.cpp
