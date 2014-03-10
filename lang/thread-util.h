@@ -4,11 +4,11 @@
 #include "thread.h"
 
 //include by OS
-#ifdef LINUX
-
-#else
+#ifdef _WIN32
   #include <process.h>
   #include <windows.h>
+#else
+
 #endif // LINUX
 
 class ThreadUtil{
@@ -20,10 +20,10 @@ class ThreadUtil{
         static void wait(Thread* thread){
 
             //implementation by OS
-            #ifdef LINUX
-
-            #else
+            #ifdef _WIN32
               WaitForSingleObject((HANDLE)thread->getHandle(), INFINITE);
+            #else
+
             #endif // LINUX
 
         }
