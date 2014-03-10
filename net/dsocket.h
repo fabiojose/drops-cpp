@@ -9,7 +9,7 @@
   #include <sys/socket.h>
   #include <netinet/in.h>
   #define INVALID_SOCKET (unsigned int)(~0)
-  #define SOCKET_ERROR	(-1)
+  #define SOCKET_ERROR	(int)(-1)
 #endif
 
 #include "dpacket.h"
