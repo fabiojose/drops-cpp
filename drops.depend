@@ -397,11 +397,13 @@
 	"../net/socket.h"
 	"example.h"
 
-1394456203 c:\documents and settings\fabiojm\drops-cpp\net\socket.h
+1394459947 c:\documents and settings\fabiojm\drops-cpp\net\socket.h
 	<iostream>
 	<winsock2.h>
 	<ws2tcpip.h>
+	<sys/types.h>
 	<sys/socket.h>
+	<netinet/in.h>
 	"../lang/exception/exceptions.h"
 	"socket-ostream.h"
 	"socket-istream.h"
@@ -433,7 +435,7 @@
 	"../lang/thread-util.h"
 	"example.h"
 
-1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\thread-util.h
+1394460340 c:\documents and settings\fabiojm\drops-cpp\lang\thread-util.h
 	"thread.h"
 	<process.h>
 	<windows.h>

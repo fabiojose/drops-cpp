@@ -1,4 +1,4 @@
-CXXFLAGS=-c -Wall
+CXXFLAGS=-c -Wall -Wwrite-strings
 all:
 	#  example
 	$(CXX) $(CXXFLAGS) example/example.cpp
@@ -26,7 +26,7 @@ all:
 	$(CXX) $(CXXFLAGS) lang/thread.cpp
 	
 	# main
-	$(CXX) $(CXXFLAGS) lang/main.cpp
+	$(CXX) $(CXXFLAGS) main.cpp
 	
 	#  net
 	$(CXX) $(CXXFLAGS) net/dpacket.cpp
