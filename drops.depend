@@ -341,19 +341,20 @@
 1394219258 c:\documents and settings\fabiojm\drops-cpp\net\msocket.h
 	"dsocket.h"
 
-1394470129 c:\documents and settings\fabiojm\drops-cpp\net\dsocket.h
+1394479016 c:\documents and settings\fabiojm\drops-cpp\net\dsocket.h
 	<winsock2.h>
 	<ws2tcpip.h>
 	<sys/types.h>
 	<sys/socket.h>
 	<netinet/in.h>
+	<arpa/inet.h>
 	"dpacket.h"
 	"../lang/exception/exceptions.h"
 
 1394219258 c:\documents and settings\fabiojm\drops-cpp\net\dpacket.h
 	"iaddress.h"
 
-1394461003 c:\documents and settings\fabiojm\drops-cpp\net\iaddress.h
+1394477760 c:\documents and settings\fabiojm\drops-cpp\net\iaddress.h
 	<winsock.h>
 	<sys/types.h>
 	<sys/socket.h>
@@ -482,7 +483,7 @@
 1394461870 source:c:\documents and settings\fabiojm\drops-cpp\net\dpacket.cpp
 	"dpacket.h"
 
-1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\dsocket.cpp
+1394477964 source:c:\documents and settings\fabiojm\drops-cpp\net\dsocket.cpp
 	"dsocket.h"
 
 1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\iaddress.cpp
