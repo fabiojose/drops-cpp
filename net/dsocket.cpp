@@ -109,6 +109,6 @@ void DatagramSocket::close(){
       closesocket(this->socksend);
       closesocket(this->sockrecv);
     #else
-      close(this->socksend);
+      ::close(this->socksend);
     #endif
 }
