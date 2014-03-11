@@ -1,6 +1,6 @@
 #include "socket-istream.h"
 
-SocketInputStream::SocketInputStream(SOCKET sock){
+SocketInputStream::SocketInputStream(unsigned int sock){
     this->sock = sock;
 }
 
