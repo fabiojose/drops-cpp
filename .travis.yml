@@ -1,3 +1,4 @@
 language: cpp
 install: make
+script: scons
 compiler: gcc
