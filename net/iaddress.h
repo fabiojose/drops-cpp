@@ -10,6 +10,7 @@
   #include <netinet/in.h>
   #include <stddef.h>
   #include <unistd.h>
+  #include <arpa/inet.h>
 #endif
 
 class InetAddress {
