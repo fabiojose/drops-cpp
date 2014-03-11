@@ -6,6 +6,7 @@
   #include <ws2tcpip.h>
 #else
   #include <sys/socket.h>
+  #define SOCKET_ERROR	(int)(-1)
 #endif
 
 #include "../io/output-stream.h"
