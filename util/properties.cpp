@@ -54,6 +54,6 @@ string Properties::getProperty(string key, string defaultValue){
 
 string Properties::setProperty(string key, string value){
 
-    return put(key, value);
+    return put(key, value)
 
 }
