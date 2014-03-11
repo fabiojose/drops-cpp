@@ -354,13 +354,14 @@
 1394219258 c:\documents and settings\fabiojm\drops-cpp\net\dpacket.h
 	"iaddress.h"
 
-1394480557 c:\documents and settings\fabiojm\drops-cpp\net\iaddress.h
+1394545253 c:\documents and settings\fabiojm\drops-cpp\net\iaddress.h
 	<winsock.h>
 	<sys/types.h>
 	<sys/socket.h>
 	<netinet/in.h>
 	<stddef.h>
 	<unistd.h>
+	<arpa/inet.h>
 
 1394219258 c:\documents and settings\fabiojm\drops-cpp\lang\exception\exceptions.h
 	"throwable.h"
@@ -400,18 +401,19 @@
 	"../net/socket.h"
 	"example.h"
 
-1394459947 c:\documents and settings\fabiojm\drops-cpp\net\socket.h
+1394546090 c:\documents and settings\fabiojm\drops-cpp\net\socket.h
 	<iostream>
 	<winsock2.h>
 	<ws2tcpip.h>
 	<sys/types.h>
 	<sys/socket.h>
 	<netinet/in.h>
+	<arpa/inet.h>
 	"../lang/exception/exceptions.h"
 	"socket-ostream.h"
 	"socket-istream.h"
 
-1394456293 c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.h
+1394545768 c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.h
 	<winsock2.h>
 	<ws2tcpip.h>
 	<sys/socket.h>
@@ -484,19 +486,19 @@
 1394461870 source:c:\documents and settings\fabiojm\drops-cpp\net\dpacket.cpp
 	"dpacket.h"
 
-1394477964 source:c:\documents and settings\fabiojm\drops-cpp\net\dsocket.cpp
+1394544673 source:c:\documents and settings\fabiojm\drops-cpp\net\dsocket.cpp
 	"dsocket.h"
 
-1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\iaddress.cpp
+1394544941 source:c:\documents and settings\fabiojm\drops-cpp\net\iaddress.cpp
 	"iaddress.h"
 
 1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\msocket.cpp
 	"msocket.h"
 
-1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-istream.cpp
+1394545577 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-istream.cpp
 	"socket-istream.h"
 
-1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.cpp
+1394545744 source:c:\documents and settings\fabiojm\drops-cpp\net\socket-ostream.cpp
 	"socket-ostream.h"
 
 1394219258 source:c:\documents and settings\fabiojm\drops-cpp\net\socket.cpp

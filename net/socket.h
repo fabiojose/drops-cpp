@@ -11,6 +11,9 @@ using namespace std;
   #include <sys/types.h>
   #include <sys/socket.h>
   #include <netinet/in.h>
+  #include <arpa/inet.h>
+  #define INVALID_SOCKET (unsigned int)(~0)
+  #define SOCKET_ERROR	 (int)(-1)
 #endif
 
 #include "../lang/exception/exceptions.h"

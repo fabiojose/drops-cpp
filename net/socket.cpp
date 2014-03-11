@@ -11,13 +11,18 @@ void Socket::init(){
 }
 
 void Socket::start(){
-    target.sin_family      = AF_INET;
-    target.sin_port        = htons(port);
-    target.sin_addr.s_addr = inet_addr(host);
+    target.sin_family = AF_INET;
+    //piece of code by OS
+    #ifdef _WIN32
+      target.sin_addr.s_addr = inet_addr(host);
+    #else
+      inet_pton(AF_INET, host, &target.sin_addr);
+    #endif
+    target.sin_port = htons(port);
 
     socksend = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if(socksend != INVALID_SOCKET){
-        if(connect(socksend, (SOCKADDR*)&target, sizeof(SOCKADDR)) != SOCKET_ERROR){
+        if(connect(socksend, (sockaddr*)&target, sizeof(sockaddr)) != SOCKET_ERROR){
 
         } else {
             throw connex;
@@ -75,7 +80,7 @@ void Socket::close(){
           closesocket(socksend);
           WSACleanup();
         #else
-          close(socksend);
+          ::close(socksend);
         #endif // _WIN32
     }
 }
